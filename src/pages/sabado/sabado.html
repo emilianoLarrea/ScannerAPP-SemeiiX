@@ -1,0 +1,44 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sábado</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <br>
+  <br>
+  <br>
+<ion-card>
+  <ion-card-header>
+    Servidor: 
+  </ion-card-header>
+  <ion-card-content>
+    <b>{{emi.response}}</b>
+  </ion-card-content>
+</ion-card>
+<br>
+  <br>
+  <br>
+<ion-item>
+    <ion-label>Registrar asistencia de: </ion-label>
+    <ion-select [(ngModel)]="evento">
+      <ion-option value="as">ACTIVIDAD SOLIDARIA</ion-option>
+      <ion-option value="taller2">TALLERES</ion-option>
+      <ion-option value="ponen">PONENCIAS</ion-option>
+      <ion-option value="cpm">CONFERENCIA PROF. Y MAG.</ion-option>
+
+    </ion-select>
+  </ion-item>
+
+<br>
+<br>
+<br>
+<br>
+<div>
+  <button ion-button block (click)="scan()" color="danger" class="btn">REGISTRAR ASISTENCIA</button>
+ </div>
+</ion-content>
